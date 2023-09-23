@@ -70,11 +70,11 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.api.rule=Host(`hostname.fqdn `) && (PathPrefix(`/api`) || PathPrefix(`/dashboard`))"
-      - traefik.http.routers.api.service=api@internal
+      - "traefik.http.routers.api.service=api@internal"
       - "traefik.http.routers.api.entrypoints=traefik"
       - "traefik.http.routers.api.tls=true"
       - "traefik.http.routers.ping.rule=Host(`hostname.fqdn `) && PathPrefix(`/ping`)"
-      - traefik.http.routers.ping.service=ping@internal
+      - "traefik.http.routers.ping.service=ping@internal"
       - "traefik.http.routers.ping.entrypoints=ping"
       - "traefik.http.routers.ping.tls=true"
 
