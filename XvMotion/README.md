@@ -1,4 +1,4 @@
-# XvMotion Utility
+# VMware XvMotion Utility
 
 1. Download [xvm-3.1.jar](https://download3.vmware.com/software/vmw-tools/xvc-mobility-cli/xvm-3.1.jar)
 2. Create [Dockerfile](./Dockerfile)
